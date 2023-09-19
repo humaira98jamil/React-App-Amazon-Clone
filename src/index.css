@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .headerHover{
+    @apply border border-transparent hover:border-white duration-100 cursor-pointer
+  }
+  .footerHover{
+    @apply text-sm tracking-wide hover:text-gray-100 cursor-pointer hover:underline duration-150
+  }
+ 
+  .footerBottomHover {
+ @apply hover:underline leading-3 
+  }
+}
