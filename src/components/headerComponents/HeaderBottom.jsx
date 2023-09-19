@@ -18,19 +18,19 @@ const HeaderBottom = () => {
     <div className="w-full px-4 h-[36px] bg-amazon_light text-white flex items-center">
       {/* LIST ITEMS START */}
 
-      <ul className="flex items-center gap-2 text-sm tracking-wide">
+      <ul className="flex items-center gap-3 text-sm tracking-wide">
         <li
           onClick={() => setSidebar(true)}
-          className="headerHover flex items-center gap-1"
+          className="headerHover flex items-center space-x-2"
         >
           <Bars3Icon className="h-6" />
           All
         </li>
-        <li className="headerHover">Today's Deal</li>
-        <li className="headerHover">Customer Service</li>
-        <li className="headerHover">Gift Cards</li>
-        <li className="headerHover">Registry</li>
-        <li className="headerHover">Sell</li>
+        <li className="headerHover hidden md:inline-flex">Today's Deal</li>
+        <li className="headerHover hidden md:inline-flex">Customer Service</li>
+        <li className="headerHover hidden md:inline-flex">Gift Cards</li>
+        <li className="headerHover hidden md:inline-flex">Registry</li>
+        <li className="headerHover hidden md:inline-flex">Sell</li>
       </ul>
 
       {/* LIST ITEM END  */}
