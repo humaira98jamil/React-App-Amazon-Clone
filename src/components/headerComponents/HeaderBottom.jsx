@@ -83,7 +83,6 @@ const HeaderBottom = () => {
                 <XMarkIcon className="h-9 bg-white text-black" />
               </span>
             </div>
-            {/* </motion.div> */}
           </div>
         </div>
       )}
