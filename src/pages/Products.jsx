@@ -53,7 +53,6 @@ const dispatch = useDispatch();
           </div>
         </div>
       ))}
-      <div><img src={"../src/assets/images/banner_image_2.jpg"} alt="" /></div>
     </div>
   );
 
