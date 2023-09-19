@@ -19,27 +19,27 @@ const Carousel = () => {
         className="h-50%"
       >
         <SwiperSlide>
-          <img src="../src/assets/images/carousel_1.jpg" />
+          <img src="../images/carousel_1.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../src/assets/images/carousel_2.jpg" />
+          <img src="../images/carousel_2.jpg" />
         </SwiperSlide>
         <SwiperSlide>
           <video controls className="h-[400px]">
             <source
-              src="../src/assets/images/carousel_vid.mp4"
+              src="../images/carousel_vid.mp4"
               type="video/mp4"
             />
           </video>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../src/assets/images/carousel_3.jpg" />
+          <img src="../images/carousel_3.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../src/assets/images/carousel_4.jpg" />
+          <img src="../images/carousel_4.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../src/assets/images/carousel_5.jpg" />
+          <img src="../images/carousel_5.jpg" />
         </SwiperSlide>
       </Swiper>
     </div>

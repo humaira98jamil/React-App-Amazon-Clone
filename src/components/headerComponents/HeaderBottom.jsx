@@ -1,18 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, {  useState } from "react";
 import {Bars3Icon, XMarkIcon , UserCircleIcon } from "@heroicons/react/24/outline";
 import {SideNavContent} from "../index";
 
 
 const HeaderBottom = () => {
-  const ref = useRef();
   const [sidebar, setSidebar] = useState(false);
-  useEffect(() => {
-    document.body.addEventListener("click", (e) => {
-      if (e.target.contains(ref.current)) {
-        setSidebar(false);
-      }
-    });
-  }, []);
 
   return (
     <div className="w-full px-4 h-[36px] bg-amazon_light text-white flex items-center">

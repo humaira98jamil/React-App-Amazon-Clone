@@ -20,8 +20,8 @@ useEffect(() => {
   return (
     <div className="h-full bg-amazonClone-background ">
       {products.length > 0 ? (
-        <div className="min-w-[1000px] max-w-[1500px] m-auto  pt-8">
-          <div className=" grid grid-cols-8 gap-10">
+        <div className="min-w-3xl lgl:min-w-[1000px] lgl:max-w-[1500px] m-auto  pt-8">
+          <div className=" grid grid-cols-8 gap-1 lgl:gap-10">
             {/* products  */}
             <div className="col-span-6 bg-white mb-20">
               <div className="text-2xl xl:text-3xl m-4 ">Shopping Cart</div>
@@ -96,7 +96,9 @@ useEffect(() => {
             </div>
 
             {/* checkout  */}
-            <div className="col-span-2 bg-white rounded h-[250px] p-7">
+            <div className="col-span-2 bg-white rounded h-80 p-1
+          
+            mdl:p-7">
               <div className="flex gap-2 text-xs xl:text-sm text-green-800 mb-2">
                 <CheckCircleIcon className="h-11" />
                 <span>
@@ -105,11 +107,9 @@ useEffect(() => {
                   Details
                 </span>
               </div>
-              <div className="text-base xl:text-lg  mb-4 ">
-                ({productsQuantity} items):
-                <span className="font-semibold ">
-                  Subtotal: ${totalPrice}
-                </span>
+              <div className=" text-base xl:text-lg  mb-4 ">
+                <span className="">({productsQuantity} items):</span>
+                <span className="font-semibold ">Subtotal: ${totalPrice}</span>
               </div>
               <button className="w-full bg-yellow-400 border:yellow-500 hover:bg-yellow-500 active:bg-yellow-600 font-medium rounded-md py-1.5 tracking-wide">
                 Proceed to Checkout
@@ -122,7 +122,7 @@ useEffect(() => {
           <div>
             <img
               className="w-80 rounded-lg p-4 py-10 m-auto"
-              src={"../src/assets/images/emptyCart.png"}
+              src={"../images/emptyCart.png"}
             />
           </div>
           <div className=" flex justify-center text-center">

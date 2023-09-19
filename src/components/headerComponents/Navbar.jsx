@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link className="headerHover" to="/">
             <img
               className="h-[35px] m-auto ml-2  "
-              src="../src/assets/images/amazon.png"
+              src="../images/amazon.png"
             />
           </Link>
           <div className=" flex md:pr-4 pl-2 md:pl-4">

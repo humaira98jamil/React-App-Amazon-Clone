@@ -28,7 +28,7 @@ const FooterMiddle = () => {
         <div>
           <img
             className="w-20 m-auto "
-            src="../src/assets/images/amazon.png"
+            src="../images/amazon.png"
           />
         </div>
         <div className="border-[1px] border-gray-500  p-1 rounded hover:border-amazonClone-yellow">

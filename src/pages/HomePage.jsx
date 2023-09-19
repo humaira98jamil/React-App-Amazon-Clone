@@ -11,7 +11,7 @@ const HomePage = () => {
       </div>
     <Products/>
       <div className="mt-4">
-        <img src={"../src/assets/images/banner_image.jpg"} alt="" />
+        <img src={"../images/banner_image.jpg"} alt="" />
       </div>
     </div>
   )
