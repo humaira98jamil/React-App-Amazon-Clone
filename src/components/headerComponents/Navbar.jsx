@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { MagnifyingGlassIcon, MapPinIcon, ShoppingCartIcon,Bars3Icon  } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
+import { HeaderBottom } from "../index";
 
 
 
@@ -88,7 +89,10 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="flex bg-amazonClone-light_blue text-white space-x-3 text-xs xl:text-sm p-2 pl-6  ">
+       <div className="flex bg-amazonClone-light_blue text-white space-x-3 text-xs xl:text-sm p-2 pl-6  "> 
+      <HeaderBottom/>
+      </div>
+      {/* <div className="flex bg-amazonClone-light_blue text-white space-x-3 text-xs xl:text-sm p-2 pl-6  ">
         <div className="flex items-center space-x-2">
           <div>
             <Bars3Icon className="h-6" />
@@ -104,7 +108,7 @@ const Navbar = () => {
         <div className=" headerHover hidden md:inline-flex ">Registry</div>
         <div className=" headerHover hidden md:inline-flex ">Gift cards</div>
         <div className=" headerHover hidden md:inline-flex ">Sell</div>
-      </div>
+      </div> */}
     </header>
   );
 };
