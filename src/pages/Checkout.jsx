@@ -18,12 +18,12 @@ useEffect(() => {
     })
   },[products])
   return (
-    <div className="h-full bg-amazonClone-background ">
+    <div className="h-full bg-amazonClone-background m-auto ">
       {products.length > 0 ? (
-        <div className="min-w-3xl lgl:min-w-[1000px] lgl:max-w-[1500px] m-auto  pt-8">
+        <div className="min-w-3xl  pt-8">
           <div className=" grid grid-cols-8 gap-1 lgl:gap-10">
             {/* products  */}
-            <div className="col-span-6 bg-white mb-20">
+            <div className="m-auto col-span-6 bg-white  mb-20">
               <div className="text-2xl xl:text-3xl m-4 ">Shopping Cart</div>
               {products.map((item) => (
                 <div key={item.id}>
@@ -94,11 +94,14 @@ useEffect(() => {
                 </button>
               </div>
             </div>
+            {/* <div className="col-span-2 mdl">
+
+            </div> */}
 
             {/* checkout  */}
-            <div className="col-span-2 bg-white rounded h-80 p-1
+            <div className="hidden mdl:inline-block col-span-2 bg-white rounded h-80 p-1
           
-            mdl:p-7">
+            mdl:p-7 ">
               <div className="flex gap-2 text-xs xl:text-sm text-green-800 mb-2">
                 <CheckCircleIcon className="h-11" />
                 <span>
@@ -116,6 +119,25 @@ useEffect(() => {
               </button>
             </div>
           </div>
+             <div className=" mdl:hidden w-80 bg-white rounded h-80 p-6 m-auto
+          
+            mdl:p-7">
+              <div className="flex gap-2 text-xs xl:text-sm text-green-800 mb-2">
+                <CheckCircleIcon className="h-11" />
+                <span>
+                  Your Order Qualifies for
+                  <span className="font-bold"> FREE DELIVERY</span>. Delivery
+                  Details
+                </span>
+              </div>
+              <div className=" text-base xl:text-lg  m-5 ">
+                <span className="">({productsQuantity} items):</span>
+                <span className="font-semibold ">Subtotal: ${totalPrice}</span>
+              </div>
+              <button className=" bg-yellow-400 border:yellow-500 hover:bg-yellow-500 active:bg-yellow-600 font-medium rounded-md p-4 tracking-wide">
+                Proceed to Checkout
+              </button>
+            </div>
         </div>
       ) : (
         <div className="mdl:flex items-center justify-center gap-4 py-10">

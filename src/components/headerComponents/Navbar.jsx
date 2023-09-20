@@ -11,8 +11,8 @@ const Navbar = () => {
 
  
   return (
-    <header className="min-w-[1000px] sticky top-0 z-50 ">
-      <div className="flex bg-amazonClone  text-white h-[60px]">
+    <header className="w-full m-auto  sticky top-0 z-50 ">
+      <div className="w-full flex items-center bg-amazonClone  text-white h-[60px]">
         {/* left section */}
 
         <div className="flex items-center   m-4">
